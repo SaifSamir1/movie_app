@@ -14,7 +14,7 @@ class DetailScreen extends StatelessWidget {
           backgroundColor: Colors.yellow,
           appBar: AppBar(
             backgroundColor: Colors.transparent,
-            leading: const ImageBack(top: 0),
+            leading:  const Icon(Icons.arrow_back_ios_new),
             title: const Text('Detail'),
             centerTitle: true,
             actions: [FavIcon()],
@@ -58,13 +58,11 @@ class DetailScreen extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.all(16.0),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  SizedBox(
-                    width: 20,
-                  ),
+
                   Text(
-                    'Spiderman No Way Home',
+                    'Spiderman No Way\n Home',
                     style: TextStyle(
                       fontSize: 18.0,
                       fontWeight: FontWeight.bold,
@@ -73,7 +71,7 @@ class DetailScreen extends StatelessWidget {
                 ],
               ),
             ),
-            TabBar(
+            const TabBar(
               tabs: [
                 Tab(text: 'About Movie'),
                 Tab(text: 'Reviews'),
